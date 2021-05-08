@@ -5,6 +5,16 @@ body {
   background: #f9fafc;
 } 
 
+.home {
+  width: 100%; 
+  text-align: center;
+  &__list {
+    font-size: 30px;
+    list-style: none;
+    margin-bottom: 30px;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto";
