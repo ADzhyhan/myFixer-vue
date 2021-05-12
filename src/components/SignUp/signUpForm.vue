@@ -39,7 +39,8 @@
             placeholder="E-mail"
             class="form__input mrgn"
           />
-          <CustomButton btnText="Get started" :isDown="true"/>
+          <!-- <CustomButton btnText="Get started" :isDown="true"/> -->
+          <button class="btn btn_down" @click="submit">Get started</button>
         </div>
       </form>
     </div>
@@ -47,40 +48,49 @@
 </template>
 
 <script>
+import axios from 'axios';
 import CustomButton from '@/components/controllers/button.vue';
 import CustomInput from '@/components/controllers/input.vue';
+// import Button from '../controllers/button.vue';
 
 export default {
   name: 'SignUpForm',
   components: {
     CustomButton,
     CustomInput,
+    // Button,
   },
   
   data() {
     return {
-      fname: '', 
-      lname: '', 
-      username: '', 
-      email: ''
+      dataForSubmit: {
+        fname: '', 
+        lname: '', 
+        username: '', 
+        email: ''
+      }
     }
   },
 
   methods: {
+    async submit() {
+      axios.get()
+    },
+
     getFname(data) {
-      console.log(data);
+      this.dataForSubmit.fname = data;
     },
 
     getLname(data) {
-      console.log(data);
+      this.dataForSubmit.lname = data;
     },
 
     getUsername(data) {
-      console.log(data);
+      this.dataForSubmit.username = data;
     },
 
     getEmail(data) {
-      console.log(data);
+      this.dataForSubmit.email = data;
     },
   }
 }

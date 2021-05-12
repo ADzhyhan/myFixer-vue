@@ -8,6 +8,21 @@
   width: 80px;
   height: 100vh;
 
+  &__item {
+    margin-top: 18px;
+    padding: 20px 28px 20px 28px;
+    text-align: center;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &_active {
+      border-left: 4px solid #0AD69C;
+      opacity: 1;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -23,17 +38,6 @@
 
   &__menu {
     margin-top: 86px;
-
-    &-item {
-      margin-top: 18px;
-      padding: 20px 28px 20px 28px;
-      text-align: center;
-
-      &_active {
-        border-left: 4px solid #0AD69C;
-        
-      }
-    }
   }
 
 }
