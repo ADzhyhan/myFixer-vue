@@ -13,7 +13,7 @@
             class="form__input mrgn"
           />
 
-          <PasswordIndocator />
+          <PasswordIndicator />
 
           <CustomInput
             v-on:change-input="getPasswordTwo"
@@ -38,7 +38,7 @@
 <script>
 import CustomInput from '@/components/controllers/input.vue';
 import Recaptcha from '@/components/controllers/recaptcha.vue';
-import PasswordIndocator from '@/components/controllers/passwordIndocator.vue';
+import PasswordIndicator from '@/components/controllers/passwordIndicator.vue';
 import Agrees from '@/components/controllers/agrees.vue';
 
 
@@ -47,7 +47,7 @@ export default {
   components: {
     CustomInput,
     Recaptcha, 
-    PasswordIndocator,
+    PasswordIndicator,
     Agrees,
   },
 

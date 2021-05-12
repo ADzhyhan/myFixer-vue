@@ -65,7 +65,9 @@ import Map from '@/components/Search/map.vue';
 export default {
   name: 'SearchForm',
   el: '#tabs', 
-  data: { activeTab: 1 },
+  data: function() {
+return { activeTab: 1 };
+},
   components: {
     Results,
     Map,

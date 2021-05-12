@@ -39,7 +39,9 @@ import AccountForm from '@/components/Profile/accountForm.vue';
 export default {
   name: 'ProfileForm',
   el: '#tabs', 
-  data: { activeTab: 1 },
+  data: function() {
+return { activeTab: 1 };
+},
   components: {
     PersonalForm,
     AccountForm

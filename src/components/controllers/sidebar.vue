@@ -3,7 +3,7 @@
       <div class="sidebar__wrapper">
         <div class="logo sidebar__logo">
           <img
-            src="../../assets/img/side-logo.svg"
+            src="../../assets/img/sidebar/side-logo.svg"
             alt="myFixer"
             class="logo__image"
           />
