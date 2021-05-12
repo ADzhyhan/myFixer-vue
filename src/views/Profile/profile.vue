@@ -1,5 +1,5 @@
 <template>
-  <ProfileHeader breadcrumbsItem1="Home" breadcrumbsItem2=" My profile"/>
+  <ProfileHeader breadcrumbsItem1="Home" breadcrumbsItem2="My profile" isActive2="true"/>
   <Sidebar isProfile="true" /> 
   <ProfileForm />
 </template>

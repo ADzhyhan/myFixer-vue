@@ -8,8 +8,13 @@
               <a class="breadcrumbs__link" href="/'">{{ breadcrumbsItem1 }}</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link link_active" href="#"
+              <a class="breadcrumbs__link" :class="{ link_active: isActive2 }" href="#"
                 >{{ breadcrumbsItem2 }}</a
+              >
+            </li>
+            <li v-if="isSrch" class="breadcrumbs__item">
+              <a class="breadcrumbs__link" :class="{ link_active: isActive3 }" href="#"
+                >{{ breadcrumbsItem3 }}</a
               >
             </li>
           </ul>
@@ -31,8 +36,12 @@
 export default {
   name: 'ProfileHeader', 
   props: {
+    isActive2: Boolean,
+    isActive3: Boolean,
+    isSrch: Boolean,
     breadcrumbsItem1: String,
     breadcrumbsItem2: String,
+    breadcrumbsItem3: String,
   }
 }
 </script>
