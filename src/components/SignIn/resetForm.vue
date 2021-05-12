@@ -10,7 +10,7 @@
             type="passwordOne"
             v-model="passwordOne"
             placeholder="New password"
-            class="form__input mrgn"
+            class="form__input"
           />
           <CustomInput
             v-on:change-input="getPasswordTwo"
