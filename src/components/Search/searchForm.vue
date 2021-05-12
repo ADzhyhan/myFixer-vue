@@ -336,8 +336,6 @@
 </template>
 
 <script>
-import Results from '@/components/Search/results.vue';
-import Map from '@/components/Search/map.vue';
 
 export default {
   name: 'SearchForm',
@@ -345,9 +343,5 @@ export default {
   data: function() {
     return { activeTab: 1 };
   },
-  components: {
-    Results,
-    Map,
-  }
 }
 </script>
