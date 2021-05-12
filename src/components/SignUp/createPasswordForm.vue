@@ -7,7 +7,7 @@
           <CustomInput
             v-on:change-input="getPasswordOne"
             id="passwordOne"
-            type="passwordOne"
+            type="password"
             v-model="passwordOne"
             placeholder="Create a password"
             class="form__input mrgn"
@@ -18,7 +18,7 @@
           <CustomInput
             v-on:change-input="getPasswordTwo"
             id="passwordTwo"
-            type="passwordTwo"
+            type="password"
             v-model="passwordTwo"
             placeholder="Confirm password"
             class="form__input"
