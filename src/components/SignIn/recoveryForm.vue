@@ -4,7 +4,6 @@
       <form action="#" class="form set-form">
         <div class="form__content">
           <h2 class="form__title">Enter your e-mail to reset your password</h2>
-          <input type="text" class="form__input mrgn" placeholder="E-mail" /> 
           <CustomInput
             v-on:change-input="getEmail"
             id="email"
