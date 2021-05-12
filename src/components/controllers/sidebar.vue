@@ -10,17 +10,23 @@
         </div>
 
         <nav class="sidebar__menu">
-          <div class="sidebar__item" :class="{ sidebar__item_active: isSearch }">
-            <a href="./search-results">
-              <img src="../../assets/img/sidebar/search-icon.svg" alt="search"/>
-            </a>
-          </div>
+          <router-link to="/search" style="text-decoration: none">
+            <div class="sidebar__item" :class="{ sidebar__item_active: isSearch }">
+              <a href="">
+                <img v-if="isSearch" src="../../assets/img/sidebar/search-icon_active.svg" alt="search"/>
+                <img v-else src="../../assets/img/sidebar/search-icon.svg" alt="search"/>
+              </a>
+            </div>
+          </router-link>
 
-          <div class="sidebar__item" :class="{ sidebar__item_active: isProfile }">
-            <a href="./profile-info">
-              <img src="../../assets/img/sidebar/user-icon.svg" alt="user-profile" />
-            </a>
-          </div>
+          <router-link to="/profile" style="text-decoration: none">
+            <div class="sidebar__item" :class="{ sidebar__item_active: isProfile }">
+              <a href="">
+                <img v-if="isProfile" src="../../assets/img/sidebar/user-icon_active.svg" alt="search"/>
+                <img v-else src="../../assets/img/sidebar/user-icon.svg" alt="search"/>
+              </a>
+            </div>
+          </router-link>
 
           <div class="sidebar__item" :class="{ sidebar__item_active: isMessages }">
             <a href="#">

@@ -21,7 +21,9 @@
           class="form__input password"
         />
         <p class="form__pass-forgot">
-          <a href="#">Forgot password?</a>
+          <a href="#">
+            <router-link to="/recovery" style="text-decoration: none">Forgot password?</router-link>
+          </a>
         </p>
         <CustomButton btnText="Sign In" :isDown="false"/>
       </div>

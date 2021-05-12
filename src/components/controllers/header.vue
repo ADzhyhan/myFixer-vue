@@ -7,7 +7,10 @@
         </a>
         <p class="header__text">
           {{ question }}
-          <a class="header__signup-link" href="#">{{ nameLink }}</a>
+          <a class="header__signup-link" href="#">
+            <router-link v-if="nameLink=='Sign up'" to="/sign-up" style="text-decoration: none">Sign up</router-link>
+            <router-link v-else to="/sign-in" style="text-decoration: none">{{ nameLink }}</router-link>
+          </a>
         </p>
       </div>
     </div>

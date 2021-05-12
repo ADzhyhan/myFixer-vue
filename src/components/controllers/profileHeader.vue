@@ -5,7 +5,8 @@
         <div class="breadcrumbs">
           <ul class="breadcrumbs__items">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="/'">{{ breadcrumbsItem1 }}</a>
+              <a class="breadcrumbs__link" href="">{{ breadcrumbsItem1 }}
+              </a>
             </li>
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" :class="{ link_active: isActive2 }" href="#"

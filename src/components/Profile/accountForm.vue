@@ -22,8 +22,8 @@
 
     <div class="user-data__item-block">
       <div class="user-data__item user-data__item-flexend">
-        <a href="#" class="item__link"
-          >CHANGE PASSWORD
+        <a href="#" class="item__link">
+          <router-link to="/reset" style="text-decoration: none">CHANGE PASSWORD</router-link>
           <img
             class="item__link-vector"
             src="../../assets/img/Vector.svg"
